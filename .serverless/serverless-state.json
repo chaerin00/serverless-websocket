@@ -236,7 +236,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-websocket/dev/1680596773049-2023-04-04T08:26:13.049Z/serverless-websocket.zip"
+                "S3Key": "serverless/serverless-websocket/dev/1683022843012-2023-05-02T10:20:43.012Z/serverless-websocket.zip"
               },
               "Handler": "handler.ping",
               "Runtime": "python3.9",
@@ -261,7 +261,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-websocket/dev/1680596773049-2023-04-04T08:26:13.049Z/serverless-websocket.zip"
+                "S3Key": "serverless/serverless-websocket/dev/1683022843012-2023-05-02T10:20:43.012Z/serverless-websocket.zip"
               },
               "Handler": "handler.connection_manager",
               "Runtime": "python3.9",
@@ -286,7 +286,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-websocket/dev/1680596773049-2023-04-04T08:26:13.049Z/serverless-websocket.zip"
+                "S3Key": "serverless/serverless-websocket/dev/1683022843012-2023-05-02T10:20:43.012Z/serverless-websocket.zip"
               },
               "Handler": "handler.default_message",
               "Runtime": "python3.9",
@@ -311,7 +311,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-websocket/dev/1680596773049-2023-04-04T08:26:13.049Z/serverless-websocket.zip"
+                "S3Key": "serverless/serverless-websocket/dev/1683022843012-2023-05-02T10:20:43.012Z/serverless-websocket.zip"
               },
               "Handler": "handler.send_message",
               "Runtime": "python3.9",
@@ -329,44 +329,44 @@
               "SendMessageLogGroup"
             ]
           },
-          "PingLambdaVersionWtmd6CvA5D8OjqEIuyQw4PS9ZkD92SG2H0Nie9hM": {
+          "PingLambdaVersionz2sqvvhxEFSbkiu2HOOGeKrImiouPQPzELoAjYQpI": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "PingLambdaFunction"
               },
-              "CodeSha256": "BpdB6ahdk8z3U851zZmrlT+l+7WJR0Tg9Ux7Uy3jq1s="
+              "CodeSha256": "iJaU0aTI1cvNOzRCLCBTqqOUtwfPnlARajuAkMpF6qQ="
             }
           },
-          "ConnectionManagerLambdaVersioncpZEN4AKZ8F9Zy9ejlODmQVnGRUe9NeNdgj4mwWg4": {
+          "ConnectionManagerLambdaVersion65i1F8p5fJbFUD7gExjLfCMunQgx4N3NrYu0E2MtQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ConnectionManagerLambdaFunction"
               },
-              "CodeSha256": "BpdB6ahdk8z3U851zZmrlT+l+7WJR0Tg9Ux7Uy3jq1s="
+              "CodeSha256": "iJaU0aTI1cvNOzRCLCBTqqOUtwfPnlARajuAkMpF6qQ="
             }
           },
-          "DefaultMessageLambdaVersionDt6ZKHqPeeUaLYELAtAprMvEabVoJIXIDxNQoFUs": {
+          "DefaultMessageLambdaVersionJTqsKUPCuq5rptOpnBoccuC5F88eQaCk6ykBloNd4w": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DefaultMessageLambdaFunction"
               },
-              "CodeSha256": "BpdB6ahdk8z3U851zZmrlT+l+7WJR0Tg9Ux7Uy3jq1s="
+              "CodeSha256": "iJaU0aTI1cvNOzRCLCBTqqOUtwfPnlARajuAkMpF6qQ="
             }
           },
-          "SendMessageLambdaVersionpMrpdhlojuCE45G0Mal12qjVK8tSnLRGTCrZM3pQuA": {
+          "SendMessageLambdaVersionNPv6lQhZ9BU3OZ6DRJpsyMW6xAejB9IecHQo9uY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SendMessageLambdaFunction"
               },
-              "CodeSha256": "BpdB6ahdk8z3U851zZmrlT+l+7WJR0Tg9Ux7Uy3jq1s="
+              "CodeSha256": "iJaU0aTI1cvNOzRCLCBTqqOUtwfPnlARajuAkMpF6qQ="
             }
           },
           "ApiGatewayRestApi": {
@@ -442,7 +442,7 @@
               "PingLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1680596758115": {
+          "ApiGatewayDeployment1683022824335": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -772,7 +772,7 @@
           "PingLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "PingLambdaVersionWtmd6CvA5D8OjqEIuyQw4PS9ZkD92SG2H0Nie9hM"
+              "Ref": "PingLambdaVersionz2sqvvhxEFSbkiu2HOOGeKrImiouPQPzELoAjYQpI"
             },
             "Export": {
               "Name": "sls-serverless-websocket-dev-PingLambdaFunctionQualifiedArn"
@@ -781,7 +781,7 @@
           "ConnectionManagerLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ConnectionManagerLambdaVersioncpZEN4AKZ8F9Zy9ejlODmQVnGRUe9NeNdgj4mwWg4"
+              "Ref": "ConnectionManagerLambdaVersion65i1F8p5fJbFUD7gExjLfCMunQgx4N3NrYu0E2MtQ"
             },
             "Export": {
               "Name": "sls-serverless-websocket-dev-ConnectionManagerLambdaFunctionQualifiedArn"
@@ -790,7 +790,7 @@
           "DefaultMessageLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DefaultMessageLambdaVersionDt6ZKHqPeeUaLYELAtAprMvEabVoJIXIDxNQoFUs"
+              "Ref": "DefaultMessageLambdaVersionJTqsKUPCuq5rptOpnBoccuC5F88eQaCk6ykBloNd4w"
             },
             "Export": {
               "Name": "sls-serverless-websocket-dev-DefaultMessageLambdaFunctionQualifiedArn"
@@ -799,7 +799,7 @@
           "SendMessageLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SendMessageLambdaVersionpMrpdhlojuCE45G0Mal12qjVK8tSnLRGTCrZM3pQuA"
+              "Ref": "SendMessageLambdaVersionNPv6lQhZ9BU3OZ6DRJpsyMW6xAejB9IecHQo9uY"
             },
             "Export": {
               "Name": "sls-serverless-websocket-dev-SendMessageLambdaFunctionQualifiedArn"
@@ -971,7 +971,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "PingLambdaVersionWtmd6CvA5D8OjqEIuyQw4PS9ZkD92SG2H0Nie9hM"
+        "versionLogicalId": "PingLambdaVersionz2sqvvhxEFSbkiu2HOOGeKrImiouPQPzELoAjYQpI"
       },
       "connectionManager": {
         "handler": "handler.connection_manager",
@@ -993,7 +993,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "ConnectionManagerLambdaVersioncpZEN4AKZ8F9Zy9ejlODmQVnGRUe9NeNdgj4mwWg4"
+        "versionLogicalId": "ConnectionManagerLambdaVersion65i1F8p5fJbFUD7gExjLfCMunQgx4N3NrYu0E2MtQ"
       },
       "defaultMessage": {
         "handler": "handler.default_message",
@@ -1010,7 +1010,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "DefaultMessageLambdaVersionDt6ZKHqPeeUaLYELAtAprMvEabVoJIXIDxNQoFUs"
+        "versionLogicalId": "DefaultMessageLambdaVersionJTqsKUPCuq5rptOpnBoccuC5F88eQaCk6ykBloNd4w"
       },
       "sendMessage": {
         "handler": "handler.send_message",
@@ -1027,7 +1027,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "SendMessageLambdaVersionpMrpdhlojuCE45G0Mal12qjVK8tSnLRGTCrZM3pQuA"
+        "versionLogicalId": "SendMessageLambdaVersionNPv6lQhZ9BU3OZ6DRJpsyMW6xAejB9IecHQo9uY"
       }
     },
     "configValidationMode": "warn",
@@ -1052,7 +1052,7 @@
     "artifact": "/Users/anchaelin/Desktop/serverless-websocket-tutorial/.serverless/serverless-websocket.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-websocket/dev/1680596773049-2023-04-04T08:26:13.049Z",
+    "artifactDirectoryName": "serverless/serverless-websocket/dev/1683022843012-2023-05-02T10:20:43.012Z",
     "artifact": "serverless-websocket.zip"
   }
 }
