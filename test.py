@@ -12,7 +12,7 @@ def lambda_handler(event, context):
     }
 
     response = requests.post(
-        'https://hooks.slack.com/services/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',
+        'web_hook_url',
         headers=headers,
         json=json_data,
     )
